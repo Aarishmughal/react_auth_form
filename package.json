@@ -2,6 +2,7 @@
   "name": "mern_auth",
   "private": false,
   "version": "0.0.0",
+  "homepage":"https://aarishmughal.github.io/mern_auth/",
   "type": "module",
   "scripts": {
     "dev": "vite",
