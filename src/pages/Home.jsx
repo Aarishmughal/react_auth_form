@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
-import "/assets/database-fill-add.svg";
-import "/assets/box-arrow-in-right.svg";
+import boxArrowInRight from "/assets/box-arrow-in-right.svg";
+import databaseFillAdd from "/assets/database-fill-add.svg";
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -21,7 +21,7 @@ const Home = () => {
                                     style={{ minHeight: "195px" }}
                                 >
                                     <img
-                                        src="/assets/box-arrow-in-right.svg"
+                                        src={boxArrowInRight}
                                         alt="box-arrow-in-right"
                                         width="120"
                                         height="120"
@@ -41,7 +41,7 @@ const Home = () => {
                                     style={{ minHeight: "195px" }}
                                 >
                                     <img
-                                        src="/assets/database-fill-add.svg"
+                                        src={databaseFillAdd}
                                         alt="database-fill-add"
                                         width="120"
                                         height="120"

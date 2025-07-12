@@ -8,7 +8,7 @@ import Register from "./pages/Register";
 function App() {
     return (
         <>
-            <BrowserRouter>
+            <BrowserRouter basename="/mern_auth">
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/login" element={<Login />} />

@@ -1,5 +1,13 @@
 # Basic Authentication in MERN
 
+## Table of Contents
+
+-   [Setting Up React App (Vite)](#setting-up-react-app-vite)
+
+-   [Setting Up GitHub Pages](#setting-up-github-pages)
+
+-   _[Coming Soon](#)_
+
 ## Setting Up React App (Vite)
 
 1.  To set up a new React App using Vite, run the following command in your terminal:
@@ -120,4 +128,66 @@
     }
     ```
 
-_More Information Coming Soon..._
+## Setting Up GitHub Pages
+
+1.  Create a new Repository on GitHub & Add the project to the repository.
+2.  Install `gh-pages` package:
+
+    ```bash
+    npm install gh-pages --save-dev
+    ```
+
+3.  Run the following command to build the React App:
+
+    ```bash
+    npm run build
+    ```
+
+4.  Add the following property to the `package.json` file:
+
+    ```json
+    //...
+    "homepage": "https://aarishmughal.github.io/mern_auth/",
+    //...
+    ```
+
+5.  Add the following scripts to the `scripts` object in `package.json`:
+
+    ```json
+    //...
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    //...
+    ```
+
+    _The keyword `dist` refers to the directory where the build files are located. In case of Vite, it is `dist`. If the project is created using Create React App, it would be `build`._
+
+6.  Make sure to add `base` url in the vite.config.js file:
+
+    ```javascript
+    //import { defineConfig } from "vite";
+    //import react from "@vitejs/plugin-react";
+
+    //export default defineConfig({
+    //    plugins: [react()],
+        base: "/mern_auth/", // Set base for GitHub Pages deployment
+    //});
+    ```
+
+7.  Once `package.json` is updated, run the following command in the terminal to begin deployment:
+
+    ```bash
+    npm run deploy -- -m "Deploy React app to GitHub Pages"
+    ```
+
+8.  This will create a new branch called `gh-pages` in your repository and deploy the React app to GitHub Pages.
+
+9.  Go to the `Settings` tab of your repository on GitHub, scroll down to the `Pages` section, and select the `gh-pages` branch as the source. Save the changes.![Screenshot](./pages1.png "Screenshot of GitHub Settings Page")![Screenshot2](./pages2.png "Screenshot of GitHub Settings Page")
+
+10. Your React app should now be live on GitHub Pages at the URL specified in the `homepage` property of your `package.json`. To apply any changes, simply run the command in the **Step 07** again:
+
+        ```bash
+        npm run deploy -- -m "Deploy React app to GitHub Pages"
+        ```
+
+    <!-- _More Information Coming Soon..._ -->
