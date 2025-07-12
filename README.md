@@ -1,4 +1,4 @@
-# Basic Authentication in MERN
+# Basic Authentication Form in React + Vite
 
 ## Table of Contents
 
