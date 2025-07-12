@@ -182,12 +182,19 @@
 
 8.  This will create a new branch called `gh-pages` in your repository and deploy the React app to GitHub Pages.
 
-9.  Go to the `Settings` tab of your repository on GitHub, scroll down to the `Pages` section, and select the `gh-pages` branch as the source. Save the changes.![Screenshot](./pages1.png "Screenshot of GitHub Settings Page")![Screenshot2](./pages2.png "Screenshot of GitHub Settings Page")
+9.  Go to the `Settings` tab of your repository on GitHub, scroll down to the `Pages` section, and select the `gh-pages` branch as the source. Save the changes.
+    ![Screenshot](./pages1.png "Screenshot of GitHub Settings Page")![Screenshot2](./pages2.png "Screenshot of GitHub Settings Page")
 
 10. Your React app should now be live on GitHub Pages at the URL specified in the `homepage` property of your `package.json`. To apply any changes, simply run the command in the **Step 07** again:
 
-        ```bash
-        npm run deploy -- -m "Deploy React app to GitHub Pages"
-        ```
+            ```bash
+            npm run deploy -- -m "Deploy React app to GitHub Pages"
+            ```
 
-    <!-- _More Information Coming Soon..._ -->
+        **NOTES:**
+
+        -   Make sure to set remote origin to the GitHub repository URL.
+        -   Make sure to use objects for importing images/svgs in the components.
+        -   Make sure to add the `basename="/react_auth_form"` prop to the `BrowserRouter` component in `App.jsx` if you are using a subdirectory for your GitHub Pages Deployment.
+
+_More Info Coming Soon..._
