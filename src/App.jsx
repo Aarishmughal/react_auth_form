@@ -8,7 +8,7 @@ import Register from "./pages/Register";
 function App() {
     return (
         <>
-            <BrowserRouter basename="/mern_auth">
+            <BrowserRouter basename="/react_auth_form">
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/login" element={<Login />} />
