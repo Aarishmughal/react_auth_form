@@ -6,7 +6,7 @@
 
 -   [Setting Up GitHub Pages](#setting-up-github-pages)
 
--   _[Coming Soon](#)_
+-   _[More on this Project](https://github.com/Aarishmughal/mern_auth)_
 
 ## Setting Up React App (Vite)
 
@@ -197,4 +197,4 @@
         -   Make sure to use objects for importing images/svgs in the components.
         -   Make sure to add the `basename="/react_auth_form"` prop to the `BrowserRouter` component in `App.jsx` if you are using a subdirectory for your GitHub Pages Deployment.
 
-_More Info Coming Soon..._
+_More on this project here: [GitHub Repository - MERN Auth](https://github.com/Aarishmughal/mern_auth)..._
